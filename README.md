@@ -10,9 +10,10 @@ XClass within LocalConfiguration and custom implementation within own userAspect
 Use a middleware to add a custom aspect to the context class.
 Query it afterwards in the same way as the standard aspects are queried.
 
+
 ```php
-     /** @var Context $context */
-    $context = GeneralUtility::makeInstance(Context::class);
-    $customAspect = $context->getAspect('ccmagnus.event_context');
-    $csutomAspectProperty = $context->getPropertyFromAspect('ccmagnus.event_context','name');
+ /** @var Context $context */
+$context = GeneralUtility::makeInstance(Context::class);
+$customAspect = $context->getAspect('ccmagnus.event_context');
+$csutomAspectProperty = $context->getPropertyFromAspect('ccmagnus.event_context','name');
 ```
